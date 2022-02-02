@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from 'react-router-dom';
 import GlobalStyle from './style/GlobalStyle';
 
 import Home from './pages/home/Index';
