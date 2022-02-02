@@ -6,11 +6,9 @@ import {
   Content,
   SubMenu,
   ImageProfile,
-  Footer,
   Resume,
   Wrapper,
 } from './Style';
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 function Home() {
   return (
@@ -46,29 +44,6 @@ function Home() {
         <ImageProfile>
           {/* <img /> */}
         </ImageProfile>
-
-        <Footer>
-          <div>
-            <h2>Contato</h2>
-            <span>(21) 9 7001-6955</span>
-          </div>
-          <div>
-            <h2>Email</h2>
-            <span>souzajonathan570@gmail.com</span>
-          </div>
-          <div>
-            <h2>Siga me</h2>
-            <a href='https://www.linkedin.com/in/jsouzap/' alt='linkedin'>
-              <FaLinkedinIn />
-            </a>
-            <a href='https://github.com/JSouza27' alt='GitHub'>
-              <FaGithub />
-            </a>
-          </div>
-          <div>
-            <span>Pagina feita usando as tecnologias React e Styled Conponent</span>
-          </div>
-        </Footer>
       </Content>
     </Wrapper>
   );
