@@ -23,7 +23,7 @@ function Footer() {
         </a>
       </div>
       <div>
-        <span>Pagina feita usando as tecnologias React e Styled Conponent</span>
+        <span>Pagina feita usando as tecnologias<br/>React e Styled Component</span>
       </div>
     </Content>
   );

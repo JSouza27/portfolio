@@ -1,12 +1,17 @@
 import React from 'react';
+import { Summary } from './Style';
 
-function Content({ timeCourse, office, company, description }) {
+function Content({ timeCourse, office, company, descriptions }) {
   return (
-    <Content>
+    <Summary>
       <span>{ timeCourse }</span>
       <h4>{ office } | { company }</h4>
-      <span>{ description }</span>
-    </Content>
+      <ul>
+        {
+          !descriptions ? null : descriptions.map((description) => <li>{ description }</li>)
+        }
+      </ul>
+    </Summary>
   );
 }
 
