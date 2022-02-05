@@ -12,7 +12,7 @@ const workExperiences = [
   {
     timeCourse: '2016 - 2019',
     company: 'Ispeedy ind.',
-    office: 'Auxiliar administrativa',
+    office: 'Auxiliar administrativo',
     descriptions: [
       'Auxiliar a gerência na distribuição das tarefas de produção',
       'Auxiliar na implantação de sistema na empresa',

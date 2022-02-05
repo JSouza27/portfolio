@@ -26,7 +26,7 @@ const Resume = () => {
           <h3>
             Experiência
             <br />
-            Proficional
+            Profissional
           </h3>
           <div>{ renderContent(experiences) }</div>
         </Cotainer>
