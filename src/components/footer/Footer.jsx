@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { Content } from './Style';
+import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
+import Content from './Style';
 
 function Footer() {
   return (
@@ -15,15 +15,19 @@ function Footer() {
       </div>
       <div>
         <h2>Siga me</h2>
-        <a href='https://www.linkedin.com/in/jsouzap/' alt='linkedin'>
+        <a href="https://www.linkedin.com/in/jsouzap/" alt="linkedin">
           <FaLinkedinIn />
         </a>
-        <a href='https://github.com/JSouza27' alt='GitHub'>
+        <a href="https://github.com/JSouza27" alt="GitHub">
           <FaGithub />
         </a>
       </div>
       <div>
-        <span>Pagina feita usando as tecnologias<br/>React e Styled Component</span>
+        <span>
+          Pagina feita usando as tecnologias
+          <br />
+          React e Styled Component
+        </span>
       </div>
     </Content>
   );

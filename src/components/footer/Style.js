@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const Content = styled.div`
+const Content = styled.div`
   border-top: 1px solid #c7c7c7;
   padding: 1.5rem 0;
   width: 100%;
@@ -36,3 +36,5 @@ export const Content = styled.div`
     justify-content: space-between;
   }
 `;
+
+export default Content;
