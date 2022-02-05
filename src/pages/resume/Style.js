@@ -12,21 +12,28 @@ export const Wrapper = styled.div`
   padding: 1.5rem 1.5rem 0;
   width: 100vw;
 
-  & > h2 {
+  & > h1 {
     font-size: 1.68rem;
     font-weight: 700;
     line-height: 2rem;
   }
 
-  & > h3 {
+  & > h2 {
     font-size: 1.375rem;
     font-weight: 700;
     line-height: 2rem;
   }
   
-  & > h4 {
+  & > h3 {
     font-size: 1.125rem;
     font-weight: 700;
+  }
+
+  @media(min-width: 767px) {
+    & > h1 {
+      font-size: 2.625rem;
+      line-height: 3.06rem; 
+    }
   }
 `;
 

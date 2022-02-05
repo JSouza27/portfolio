@@ -10,43 +10,41 @@ import {
   Wrapper,
 } from './Style';
 
-function Home() {
-  return (
-    <Wrapper>
-      <Content>
-        <div>
-          <Resume>
-            <Title>{'<Hello World />'}</Title>
-            <Text>
-              Sou um estudante de Desenvolvimento Web na Trybe e apaixonado
-              por tecnologia e além de gostar de livros, boas músicas gosto
-              também de desenvolvimento e marcas que trabalham para contribuir
-              com a interação digital.
-            </Text>
-            <Text>
-              GitHub: github.com/JSouza27
-            </Text>
-          </Resume>
+const Home = () => (
+  <Wrapper>
+    <Content>
+      <div>
+        <Resume>
+          <Title>{'<Hello World />'}</Title>
+          <Text>
+            Sou um estudante de Desenvolvimento Web na Trybe e apaixonado
+            por tecnologia e além de gostar de livros, boas músicas gosto
+            também de desenvolvimento e marcas que trabalham para contribuir
+            com a interação digital.
+          </Text>
+          <Text>
+            GitHub: github.com/JSouza27
+          </Text>
+        </Resume>
 
-          <SubMenu>
-            <Link to="/Resume">
-              Resumo
-            </Link>
-            <Link to="/Projects">
-              Projetos
-            </Link>
-            <Link to="/Contact">
-              Contato
-            </Link>
-          </SubMenu>
-        </div>
+        <SubMenu>
+          <Link to="/Resume">
+            Resumo
+          </Link>
+          <Link to="/Projects">
+            Projetos
+          </Link>
+          <Link to="/Contact">
+            Contato
+          </Link>
+        </SubMenu>
+      </div>
 
-        <ImageProfile>
-          {/* <img /> */}
-        </ImageProfile>
-      </Content>
-    </Wrapper>
-  );
-}
+      <ImageProfile>
+        {/* <img /> */}
+      </ImageProfile>
+    </Content>
+  </Wrapper>
+);
 
 export default Home;

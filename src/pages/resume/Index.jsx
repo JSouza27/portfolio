@@ -5,7 +5,7 @@ import experiences from '../../utils/WorkExperience';
 import education from '../../utils/Education';
 import skills from '../../utils/Skills';
 
-function Resume() {
+const Resume = () => {
   const renderContent = (array) => (
     array.map(({ timeCourse, office, company, descriptions }, index) => (
       <Content
@@ -21,7 +21,7 @@ function Resume() {
   return (
     <Wrapper>
       <SubWrapper>
-        <h2>Resumo</h2>
+        <h1>Resumo</h1>
         <Cotainer>
           <h3>
             Experiência
@@ -59,6 +59,6 @@ function Resume() {
       </SubWrapper>
     </Wrapper>
   );
-}
+};
 
 export default Resume;
