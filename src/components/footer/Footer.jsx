@@ -6,7 +6,7 @@ function Footer() {
   return (
     <Content>
       <div>
-        <h2>Contato</h2>
+        <h2>Telefone</h2>
         <span>(21) 9 7001-6955</span>
       </div>
       <div>

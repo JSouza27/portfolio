@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-export const WrapperContact = styled.div`
-  border: 1px solid red;
+export const ContactWrapper = styled.div`
   align-items: center;
   color: #000;
   display: flex;
@@ -13,6 +12,28 @@ export const WrapperContact = styled.div`
   width: 100vw;
 `;
 
-export const ContactHeader = styled.div``;
+export const ContactContainer = styled.div`
+  width: 100%;
 
-export const Form = styled.div``;
+  &> div > h1 {
+    font-size: 1.68rem;
+    font-weight: 700;
+    line-height: 2rem;
+  }
+
+  @media(min-width: 767px) {
+    display: flex;
+    justify-content: space-around;
+    width: 61.25rem;
+
+    & > div {
+      max-width: 29.93rem;
+    }
+
+    &> div > h1 {
+      font-size: 2.625rem;
+      font-weight: 700;
+      line-height: 3.06rem;
+    }
+  }
+`;
