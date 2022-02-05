@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const Summary = styled.div`
+const SummaryBlock = styled.div`
   margin-bottom: 3.75rem;
 
   & > span {
@@ -18,3 +18,5 @@ export const Summary = styled.div`
     margin: 0.5rem  0;
   }
 `;
+
+export default SummaryBlock;
