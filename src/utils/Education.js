@@ -10,7 +10,7 @@ const education = [
       'Ciência da Computação',
       'Metodologias Ágeis',
       'Soft Skills',
-    ]
+    ],
   },
   {
     timeCourse: '2010 - Incompleto',
@@ -18,7 +18,7 @@ const education = [
     office: 'Contabilidade',
     descriptions: [
       'Ciências Contabéis',
-    ]
+    ],
   },
 ];
 

@@ -1,12 +1,12 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   align-items: center;
   color: #000;
   display: flex;
-  flex-direction: column;
   font-size: 1rem;
   font-family: 300;
+  flex-direction: column;
   height: 100%;
   line-height: 1.6em;
   padding: 1.5rem 1.5rem 0;

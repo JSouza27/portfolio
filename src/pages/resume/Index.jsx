@@ -6,49 +6,41 @@ import education from '../../utils/Education';
 import skills from '../../utils/Skills';
 
 function Resume() {
+  const renderContent = (array) => (
+    array.map(({ timeCourse, office, company, descriptions }, index) => (
+      <Content
+        key={ office + index }
+        timeCourse={ timeCourse }
+        office={ office }
+        company={ company }
+        descriptions={ descriptions }
+      />
+    ))
+  );
+
   return (
     <Wrapper>
       <SubWrapper>
         <h2>Resumo</h2>
         <Cotainer>
-          <h3>Experiência<br/>Proficional</h3>
-          <div>
-            {
-              experiences.map(({ timeCourse, office, company, descriptions }, index) => (
-              <Content
-                key={ office + index }
-                timeCourse={ timeCourse }
-                office={ office }
-                company={ company }
-                descriptions={ descriptions }
-              />
-              ))
-            }
-          </div>
+          <h3>
+            Experiência
+            <br />
+            Proficional
+          </h3>
+          <div>{ renderContent(experiences) }</div>
         </Cotainer>
       </SubWrapper>
-      
+
       <ContentDivision />
 
       <SubWrapper>
         <Cotainer>
           <h3>Formação</h3>
-          <div>
-          {
-            education.map(({ timeCourse, office, company, descriptions }, index) => (
-              <Content
-                key={ office + index }
-                timeCourse={ timeCourse }
-                office={ office }
-                company={ company }
-                descriptions={ descriptions }
-              />
-              ))
-            }
-          </div>
+          <div>{ renderContent(education) }</div>
         </Cotainer>
       </SubWrapper>
-     
+
       <ContentDivision />
 
       <SubWrapper>

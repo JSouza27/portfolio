@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import GlobalStyle from './style/GlobalStyle';
 
-import { Root } from './style/App_Style';
+import Root from './style/App_Style';
 import Routes from './Routes';
 import Footer from './components/footer/Footer';
 

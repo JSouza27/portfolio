@@ -16,7 +16,7 @@ function Home() {
       <Content>
         <div>
           <Resume>
-            <Title>{`<Hello World />`}</Title>
+            <Title>{'<Hello World />'}</Title>
             <Text>
               Sou um estudante de Desenvolvimento Web na Trybe e apaixonado
               por tecnologia e além de gostar de livros, boas músicas gosto

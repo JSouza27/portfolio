@@ -1,9 +1,11 @@
 import React from 'react';
-import { WrapperContact } from './Style';
+import { WrapperContact, ContactHeader } from './Style';
 
 function Contact() {
   return (
-    <WrapperContact>Contact</WrapperContact>
+    <WrapperContact>
+      <ContactHeader>conteúdo</ContactHeader>
+    </WrapperContact>
   );
 }
 

@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const Root = styled.div`
+const Root = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -9,3 +9,5 @@ export const Root = styled.div`
   padding: 1.5rem;
   width: 100vw;
 `;
+
+export default Root;
