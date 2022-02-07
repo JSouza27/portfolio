@@ -1,5 +1,5 @@
 import React from 'react';
-import Content from '../../components/resume_content/Content';
+import Content from '../../components/resumeContent/Content';
 import { Wrapper, Cotainer, ContentDivision, SubWrapper } from './Style';
 import experiences from '../../utils/WorkExperience';
 import education from '../../utils/Education';

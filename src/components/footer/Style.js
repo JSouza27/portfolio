@@ -31,7 +31,16 @@ const Content = styled.div`
     vertical-align: baseline;
   }
 
-  @media(min-width: 800px) {
+  & > div:nth-child(4) {
+    color: #3d495c;
+    font-size: 0.75rem;
+    height: 100%;
+    line-height: 1rem;
+    margin: auto 0;
+    width: 18rem;
+  }
+
+  @media(min-width: 767px) {
     display: flex;
     justify-content: space-between;
   }

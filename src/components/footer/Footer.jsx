@@ -24,9 +24,7 @@ function Footer() {
       </div>
       <div>
         <span>
-          Pagina feita usando as tecnologias
-          <br />
-          React e Styled Component
+          Feito com React e Styled Component, baseado no layout de Nicol Rider.
         </span>
       </div>
     </Content>
