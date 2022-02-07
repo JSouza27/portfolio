@@ -67,11 +67,10 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media(min-width: 800px) {
+  @media(min-width: 767px) {
     align-content: space-between;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
     padding: 2.5rem;
 
@@ -87,13 +86,14 @@ export const Content = styled.div`
 
 export const Resume = styled.div`
 
-  @media(min-width: 800px) {
+  @media(min-width: 767px) {
     max-width: 23.21rem;
   }
 `;
 
 export const Title = styled.h1`
   font-size: 2.5rem;
+  font-weight: 700;
 `;
 
 export const Text = styled.p`
@@ -118,13 +118,13 @@ export const SubMenu = styled.div`
     display: flex;
     font-size: 1rem;
     font-weight: 700;
-    height: 5.31rem;
+    max-height: 8.81rem;
     justify-content: center;
     margin: 0.5rem;
     min-height: 5rem;
     min-width: 5rem;
     text-decoration: none;
-    width: 5.31rem;
+    max-width: 8.81rem;
   }
 
   & > :nth-child(1) {
@@ -139,7 +139,7 @@ export const SubMenu = styled.div`
     background-color: #80d8da;
   }
 
-  @media(min-width: 800px) {
+  @media(min-width: 767px) {
     max-width: 30rem;
 
     & > a {
@@ -157,14 +157,13 @@ export const ImageProfile = styled.div`
   background-color: #e3e3e3;
   border: none;
   border-radius: 50%;
-  height: 17.5rem;
   margin: 1rem;
-  min-height: 16rem;
-  min-width: 16rem;
-  width: 17.5rem;
+  min-height: 17.5rem;
+  min-width: 17.5rem;
 
-  @media(min-width: 800px) {
-    max-width: 30rem;
+  @media(min-width: 767px) {
+    height: 30rem;
     margin: 2rem;
+    width: 30rem;
   }
 `;

@@ -18,9 +18,9 @@ const Home = () => (
           <Title>{'<Hello World />'}</Title>
           <Text>
             Sou um estudante de Desenvolvimento Web na Trybe e apaixonado
-            por tecnologia e além de gostar de livros, boas músicas gosto
-            também de desenvolvimento e marcas que trabalham para contribuir
-            com a interação digital.
+            por tecnologia além de gostar de livros, boas músicas. Tenho como missão
+            poder contribuir com a comunidade de desenvolvedores e na criação
+            interação e integração digital.
           </Text>
           <Text>
             GitHub: github.com/JSouza27
