@@ -11,7 +11,7 @@ const Button = styled.button`
   height: 2.5rem;
   outline: none;
   position: absolute;
-  right: 5%;
+  right: 1%;
   top: 0;
   width: 2.5rem;
 `;
