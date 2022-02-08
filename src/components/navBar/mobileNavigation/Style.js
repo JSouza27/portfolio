@@ -10,7 +10,7 @@ const MobileNav = styled.nav`
     display: flex;
     flex-direction: column;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 3.2rem;
     width: 100%;
