@@ -1,14 +1,17 @@
 import React from 'react';
+import MenuProvider from '../../context/MenuProvider';
 import MobileNavigation from './mobileNavigation/MobileNavigation';
 import Navigation from './navigation/Navigation';
 
-import NaBarContainer from './Style';
+import NavBarContainer from './Style';
 
 const NavBar = () => (
-  <NaBarContainer>
-    <Navigation />
-    <MobileNavigation />
-  </NaBarContainer>
+  <MenuProvider>
+    <NavBarContainer>
+      <Navigation />
+      <MobileNavigation />
+    </NavBarContainer>
+  </MenuProvider>
 );
 
 export default NavBar;
