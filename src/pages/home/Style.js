@@ -144,6 +144,7 @@ export const SubMenu = styled.div`
 
     & > a {
       height: 8.75rem;
+      transition: 0.3s;
       width: 8.75rem;
     }
 
@@ -160,6 +161,13 @@ export const ImageProfile = styled.div`
   margin: 1rem;
   min-height: 17.5rem;
   min-width: 17.5rem;
+  overflow:hidden;
+
+  & > img {
+    filter: grayscale();
+    height: 100%;
+    width: 100%;
+  }
 
   @media(min-width: 767px) {
     height: 30rem;

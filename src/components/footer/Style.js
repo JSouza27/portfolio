@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Content = styled.div`
   border-top: 1px solid #c7c7c7;
-  padding: 1.5rem 0;
+  padding-top: 1.5rem;
   width: 100%;
 
   & div {

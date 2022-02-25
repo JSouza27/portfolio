@@ -6,7 +6,7 @@ import LinkContainer from './Style';
 
 const NavLinks = () => {
   const { open, closeMenu } = useContext(MenuContext);
-  console.log(open);
+
   return (
     <LinkContainer>
       <Link to="/" onClick={ () => open && closeMenu() }>Home</Link>

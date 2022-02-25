@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import InfoContext from '../../context/InfoContext';
 import {
   Text,
   Title,
@@ -10,41 +11,41 @@ import {
   Wrapper,
 } from './Style';
 
-const Home = () => (
-  <Wrapper>
-    <Content>
-      <div>
-        <Resume>
-          <Title>{'<Hello World />'}</Title>
-          <Text>
-            Sou um estudante de Desenvolvimento Web na Trybe e apaixonado
-            por tecnologia além de gostar de livros, boas músicas. Tenho como missão
-            poder contribuir com a comunidade de desenvolvedores e na criação
-            interação e integração digital.
-          </Text>
-          <Text>
-            GitHub: github.com/JSouza27
-          </Text>
-        </Resume>
+const Home = () => {
+  const { basics } = useContext(InfoContext);
+  const { summary, image } = basics;
 
-        <SubMenu>
-          <Link to="/Resume">
-            Resumo
-          </Link>
-          <Link to="/Projects">
-            Projetos
-          </Link>
-          <Link to="/Contact">
-            Contato
-          </Link>
-        </SubMenu>
-      </div>
+  return (
+    <Wrapper>
+      <Content>
+        <div>
+          <Resume>
+            <Title>{'<Hello World />'}</Title>
+            <Text>{summary}</Text>
+            <Text>
+              GitHub: github.com/JSouza27
+            </Text>
+          </Resume>
 
-      <ImageProfile>
-        {/* <img /> */}
-      </ImageProfile>
-    </Content>
-  </Wrapper>
-);
+          <SubMenu>
+            <Link to="/Resume">
+              Resumo
+            </Link>
+            <Link to="/Projects">
+              Projetos
+            </Link>
+            <Link to="/Contact">
+              Contato
+            </Link>
+          </SubMenu>
+        </div>
+
+        <ImageProfile>
+          <img src={ image } alt="avatar" />
+        </ImageProfile>
+      </Content>
+    </Wrapper>
+  );
+};
 
 export default Home;
